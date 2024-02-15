@@ -143,7 +143,7 @@ def main():
     if company_name and ticker_code and start_date and end_date:
         # Analyze button
         if submit_button:
-            if end_date - start_date < timedelta(days=30):
+            if end_date - start_date < timedelta(days=29):
                 st.error("The gap between Start date and End date should be at least 30 days.")
                 time.sleep(5)
                 st.experimental_rerun()
