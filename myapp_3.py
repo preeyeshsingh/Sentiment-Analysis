@@ -1,6 +1,5 @@
 import datetime
 from datetime import timedelta
-from turtle import width
 import streamlit as st
 import yfinance as yf
 import pandas as pd
@@ -8,7 +7,6 @@ import requests
 import plotly.graph_objects as go
 import time
 import streamlit.components.v1 as components
-from st_aggrid import AgGrid
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
