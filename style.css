@@ -73,8 +73,8 @@
 .kpi-box {
   border-radius: 10px;
   background-color: #F5F5F5;
-  padding: 10px;
+  margin: 20%;
+  padding: 20%
   max-width: 200px;
-  margin: 5px;
   text-align: center;
 }
