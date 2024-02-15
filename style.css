@@ -1,0 +1,80 @@
+/* For the main background */
+.stApp {
+  background-color: #FFFFFF;
+}
+
+/* Positive sentiment */
+.positive-sentiment {
+  color: #12A150; /* Font color */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+/* Negative sentiment */
+.negative-sentiment {
+  color: #F95890; /* Font color */
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Neutral sentiment */
+.neutral-sentiment {
+  color: #F98858; /* Font color */
+  padding: 5px;
+  border-radius: 5px;
+}
+.stButton>button {
+  background-color: #479f80; /* Green background */
+  color: white; /* White text */
+  border-radius: 8px; /* Rounded borders */
+  border: none; /* Remove default border */
+  padding: 10px 20px; /* Padding inside the button */
+  margin: 10px 0; /* Margin around the button */
+  font-size: 16px; /* Font size */
+}
+
+.stButton>button:hover {
+  background-color: #FBB347;
+  color: #000000;
+}
+
+.dataframe-container {
+  border: 2px solid #C0C0C0;
+  padding: 10px;
+  border-radius: 5px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.api-response-box {
+  border: 2px solid #333;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.dataframe-container table {
+  background-color: #F5F5F5;
+}
+
+/* Bold text, light grey background, and styling for user input section */
+.user-input {
+  font-weight: bold;
+  background-color: #F5F5F5;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dataframe-container table th {
+  text-align: center;
+}
+
+.kpi-box {
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  padding: 10px;
+  max-width: 200px;
+  margin: 5px;
+  text-align: center;
+}
