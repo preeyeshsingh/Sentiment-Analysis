@@ -144,23 +144,23 @@ def main():
             if end_date - start_date < timedelta(days=29):
                 st.error("The gap between Start date and End date should be at least 30 days.")
                 time.sleep(5)
-                st.experimental_rerun()
+                st.rerun()
             if start_date > datetime.date.today():
                 st.error("Start date cannot be in the future.")
                 time.sleep(5)
-                st.experimental_rerun()
+                st.rerun()
             if end_date > datetime.date.today():
                 st.error("End date cannot be in the future.")
                 time.sleep(5)
-                st.experimental_rerun()
+                st.rerun()
             if start_date == end_date:
                 st.error("Start date and end date cannot be the same.")
                 time.sleep(5)
-                st.experimental_rerun()
+                st.rerun()
             if start_date > end_date:
                 st.error("End date must be after the start date.")
                 time.sleep(5)
-                st.experimental_rerun()
+                st.rerun()
             try:
                 with st.spinner('Fetching Data...'):
                     # Fetching the data
@@ -215,13 +215,13 @@ def main():
             except Exception as e:
                 st.error('An error occurred.')
                 time.sleep(5)
-                st.experimental_rerun()
+                st.rerun()
     else:
         # If inputs are not filled, show a warning
         if submit_button:
             st.warning('Please fill in all input fields.')
             time.sleep(5)
-            st.experimental_rerun()
+            st.rerun()
 
 # Run the main function
 if __name__ == '__main__':
